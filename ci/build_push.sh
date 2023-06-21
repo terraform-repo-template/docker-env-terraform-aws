@@ -27,7 +27,7 @@ if [[ "${BRANCH}" == "main" ]] || [[ "${BRANCH}" == "master" ]]; then
   docker buildx build \
                 --build-arg TERRAFORM_VERSION="${TERRAFORM_VERSION}" \
                 --build-arg AWS_CLI_VERSION="${AWS_CLI_VERSION}" \
-                -t "${DOCKER_REGISTRY}/${REPOSITORY}:${TERRAFORM_VERSION}" \
+                -t "${DOCKER_REGISTRY}/${REPOSITORY}:${TERRAFORM_VERSION}-${AWS_CLI_VERSION}" \
                 -t "${DOCKER_REGISTRY}/${REPOSITORY}:${COMMIT_SHORT}" \
                 --platform linux/arm64,linux/amd64 \
                 --push \
