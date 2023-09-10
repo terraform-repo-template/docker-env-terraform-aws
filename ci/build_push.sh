@@ -11,8 +11,8 @@ function info() {
   echo -e "$COLOR_GREEN$1$COLOR_NON"
 }
 
-TERRAFORM_VERSION=${1:-1.5.0}
-AWS_CLI_VERSION=${2:-2.12.1}
+TERRAFORM_VERSION=${1:-1.5.7}
+AWS_CLI_VERSION=${2:-2.13.17}
 DOCKER_REGISTRY=johnzen
 REPOSITORY=env-terraform-aws
 
