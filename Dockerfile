@@ -1,6 +1,6 @@
 # Reference: https://stackoverflow.com/questions/60298619/awscli-version-2-on-alpine-linux
-ARG ALPINE_VERSION=3.17.3
-ARG PYTHON_VERSION=3.11.3-alpine3.17
+ARG ALPINE_VERSION=3.18.4
+ARG PYTHON_VERSION=3.11.6-alpine3.18
 
 FROM python:${PYTHON_VERSION} as builder
 
